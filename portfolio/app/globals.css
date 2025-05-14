@@ -4,7 +4,6 @@
   --background: #A0C29E;
   --foreground: #171717;
   --text-align-default: center;
-  --font-main: 'Poppins', sans-serif;
   --padding-default: 1rem;
 }
 
@@ -12,12 +11,15 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-eb), Arial, Helvetica, sans-serif;
 }
 
 @layer components {
 
 .navlink{
   @apply text-[#000000] hover:text-[#C5D9C4] transition text-lg;
+}
+.ico{
+  @apply text-[#000000] transition transform hover:text-[#C5D9C4];
 }
 }
